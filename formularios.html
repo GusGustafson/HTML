@@ -73,8 +73,16 @@
         <textarea name="message" rows="3" cols="75">
             Mensaje de prueba escrito en un textarea.
         </textarea>
-        <br/>
         <textarea rows="3" cols="30" placeholder="Descripción..."></textarea>
+
+        <br/>
+
+        ¿Tu cumpleaños es el día...?<br/>
+        <input type="date" name="birthday"/>
+        
+        <br/>
+        
+        <input type="file" name="miArchivo"/>
 
         <br/>
 
@@ -82,5 +90,31 @@
         <input type="reset" value="Restablecer"/>
     
     </form>
+
+    <form>
+        <!--Aquí no ponemos los placeholder porque no hacen falta. En el siguiente FORM sí los ponemos.-->
+        <label for="nombre">
+            Nombre:
+            <input type="text" name="firstname" id="nombre"/>
+        </label>
+        <label for="apellido">
+            Apellido:
+            <input type="text" name="lastname" id="apellido"/>
+        </label>
+
+        <button type="submit">Mandar</button>
+    </form>
+    <hr/>
+
+    <h3>Login</h3>
+    <form>
+        <input type="email" name="correo" placeholder="Pon aquí tu correo"/>
+        <input type="password" name="contraseña" placeholder="Pon aquí tu contraseña"/>
+        <button type="submit">Login</button>
+    </form>
+
+    <!--Aquí viene algo de CSS. Mejor no usar así. Es solo para ver cómo SPAN sirve de contenedor de texto.-->
+    <p>Lorem ipsum dolor sit amet <span style="color: blue;">consectetur</span> adipisicing elit.</p>
+
 </body>
 </html>

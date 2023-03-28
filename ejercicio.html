@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro - Mi web</title>
+</head>
+<body>
+    
+    <h1>Formulario de registro</h1>
+
+    <form action="" method="get">
+        <label for="nombre">
+        Nombre:
+        <input type="text" name="nombre" id="nombre" maxlength="50"/>
+        </label>
+        <br/><br/>
+        <label for="apellidos">
+        Apellidos:
+        <input type="text" name="apellidos" id="apellidos" maxlength="50"/>
+        </label>
+        <br/><br/>
+        Sexo:
+        <label for="hombre">
+        <input type="radio" name="genero" id="hombre"/>hombre
+        </label>
+        <label for="mujer">
+        <input type="radio" name="genero" id="mujer"/>mujer
+        </label>
+        <br/><br/>
+        <label for="correo">
+        Correo:
+        <input type="email" name="correo" id="correo"/>
+        </label>
+        <br/>
+        <label for="novedades">
+        <input type="checkbox" name="novedades" value="novedades" id="novedades" checked/>Deseo recibir información sobre novedades y ofertas
+        </label>
+        <br/><br/>
+        <label for="condiciones">
+        <input type="checkbox" name="condiciones" value="condiciones" id="condiciones"/>Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos
+        </label>
+        <br/><br/>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
