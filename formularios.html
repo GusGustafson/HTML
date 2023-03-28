@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+
+    <form action="#" method="post">
+        Tu nombre, illo:
+        <input type="text" name="firstname" placeholder="Pon aquí tu nombre"/>
+        <br/>
+        Y también el apellido:
+        <input type="text" name="lastname" placeholder="Pon aquí tu apellido"/>
+        <br/>
+        Correo electrónico:
+        <input type="email" name="correo" placeholder="Pon aquí tu correo"/>
+        <br/>
+        Contraseña:
+        <input type="password" name="password" placeholder="Pon aquí tu contraseña"/>
+        <br/>
+        Teléfono:
+        <input type="number" name="telefono" placeholder="Aquí va el teléfono"/>
+        <br/>
+        <br/>
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Resetear"/>
+    </form>
+
+    <hr/>
+
+    <form>
+        Elige tu género:
+        <br/>
+        <input type="radio" name="genero" id="Femenino"/>Femenino<br/>
+        <input type="radio" name="genero" id="Mascuino" checked/>Masculino<br/>
+        <input type="radio" name="genero" id="Otro"/>Otro<br/>
+        <br/>
+        Elige tu vehículo:
+        <br/>
+        <input type="checkbox" name="vehiculo1" value="Coche"/>Coche<br/>
+        <input type="checkbox" name="vehiculo2" value="Moto" checked/>Moto<br/>
+        <input type="checkbox" name="vehiculo3" value="Bici"/>Bici<br/>
+        <br/>
+        Elige tu país:
+        <br/>
+        <select name="pais">
+            <optgroup label="Europa">
+                <option value="ES">España</option>
+                <option value="IT" selected>Italia</option>
+                <option value="UK">Reino Unido</option>
+            </optgroup>
+            <optgroup label="América">
+                <option value="AR">Argentina</option>
+                <option value="VE">Venezuela</option>
+                <option value="UR">Uruguay</option>
+            </optgroup>
+        </select>
+
+        <hr/>
+
+        <fieldset>
+            <legend>Datos personales</legend>
+            <input type="text" name="firstname" placeholder="Pon aquí tu nombre"/><br/>
+            <input type="text" name="lastname" placeholder="Pon aquí tu apellido"/>
+        </fieldset>
+
+        <br/>
+
+        <textarea name="message" rows="3" cols="75">
+            Mensaje de prueba escrito en un textarea.
+        </textarea>
+        <br/>
+        <textarea rows="3" cols="30" placeholder="Descripción..."></textarea>
+
+        <br/>
+
+        <button type="submit">Enviar</button>
+        <input type="reset" value="Restablecer"/>
+    
+    </form>
+</body>
+</html>
